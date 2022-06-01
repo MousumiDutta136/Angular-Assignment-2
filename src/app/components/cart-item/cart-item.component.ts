@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import{ ProductData} from 'src/app/models/product-data.interface'
 
 @Component({
   selector: 'cart-item',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cart-item.component.scss']
 })
 export class CartItemComponent implements OnInit {
+  @Input() cartData!: ProductData;
 
   constructor() { }
 

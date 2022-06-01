@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import{ OrderData} from 'src/app/models/order-data.interface';
 
 @Component({
   selector: 'order-item',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./order-item.component.scss']
 })
 export class OrderItemComponent implements OnInit {
-
+  @Input() orderItem!: OrderData;
   constructor() { }
 
   ngOnInit(): void {

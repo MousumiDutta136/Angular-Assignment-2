@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, OnInit, Input } from '@angular/core';
+import{ ProductData} from 'src/app/models/product-data.interface'
+import { filter } from 'rxjs';
+import { ProductsService } from 'src/app/services/products.service';
 @Component({
   selector: 'cart',
   templateUrl: './cart.component.html',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CartComponent implements OnInit {
 
-  constructor() { }
+  itemCart: any =  [];
+  constructor(private carts: ProductsService) { }
 
   ngOnInit(): void {
+    this.carts.getCartItems()
+    .subscribe(res => {
+      this.itemCart = res;
+    })
+    }
+
+  emptyCart(){
+      this.carts.clearCart();
+    }
   }
 
-}
+

@@ -19,6 +19,7 @@ import { MatCardModule } from '@angular/material/card';
 import { ItemComponent } from './components/item/item.component';
 import { CartItemComponent } from './components/cart-item/cart-item.component';
 import { OrderItemComponent } from './components/order-item/order-item.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { OrderItemComponent } from './components/order-item/order-item.component
     MatIconModule,
     MatButtonModule,
     NoopAnimationsModule,
-    MatCardModule
+    MatCardModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,11 +1,16 @@
-<div class="container">
-    <cart-item></cart-item>
-    <cart-item></cart-item>
-    <cart-item></cart-item>
-    <cart-item></cart-item>
-    <cart-item></cart-item>
+<nav-bar title="Humber e-store"></nav-bar>
+
+<div class="middle" *ngIf="itemCart.length === 0">
+  <div class="middle"></div>
+  <h1 >
+    Cart is empty
+  </h1>
 </div>
 
-<div>
-    <button mat-button>Clear Cart</button>
-  </div>
+<div class="container">
+    <cart-item *ngFor="let cartData of itemCart" [cartData]="cartData"></cart-item>
+</div>
+
+<div class="middle" *ngIf="itemCart.length > 0">
+    <button mat-button (click)="emptyCart()">Clear Cart</button>
+</div>

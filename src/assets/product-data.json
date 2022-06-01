@@ -1,4 +1,5 @@
-[
+
+  [
     { "name": "iPhone 13", "price": "$1300", "image": "https://www.apple.com/v/iphone-13/f/images/overview/hero/hero_1_static__feiuc1zaeiaa_large_2x.jpg" },
     { "name": "Samsung S22", "price": "$1300", "image": "https://images.samsung.com/is/image/samsung/p6pim/ca/2202/gallery/ca-galaxy-s22-s901-sm-s901widexac-530778700?$684_547_JPG$" },
     { "name": "Dell XPS 13", "price": "$1500", "image": "https://media.wired.com/photos/60f72daaff69a47a8f704ae7/master/w_1600,c_limit/Gear-Dell-XPS-13-2021-1.jpg" },
@@ -20,3 +21,4 @@
     { "name": "Mirror", "price": "$100", "image": "https://secure.img1-fg.wfcdn.com/im/64269720/resize-h800-w800%5Ecompr-r85/1381/138185700/Decosmo+Modern+%26+Contemporary+Cheval+Mirror.jpg" },
     { "name": "Rabbit Statue", "price": "$80", "image": "https://secure.img1-fg.wfcdn.com/im/49644918/resize-h800-w800%5Ecompr-r85/1176/117632616/Hopper%2C+the+Bunny%2C+Standing+Garden+Rabbit+Statue.jpg" }
 ]
+

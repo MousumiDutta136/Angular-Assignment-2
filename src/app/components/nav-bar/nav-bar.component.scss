@@ -10,16 +10,23 @@ h1 {
     font-size: 36px;
     margin-top: 5px;
     display: inline;
+
+
 }
 
 search-bar {
     flex-grow: 2;
+    justify-content: flex-end;//added
 }
 
 a {
     padding: 8px;
     height: 12px;
-    cursor: pointer; 
+    cursor: pointer;
+    background-color:rgba(0,73,120, 0.84);//added
+    text-decoration:none;//added
+    color:azure;//added
+
 }
 
 a:hover {

@@ -1,5 +1,5 @@
+<nav-bar title="Humber e-store" ></nav-bar>
 <div class="container">
-    <order-item></order-item>
-    <order-item></order-item>
-    <order-item></order-item>
+    <order-item *ngFor="let orderItem of ordersdata" [orderItem]="orderItem"></order-item>
+
 </div>
