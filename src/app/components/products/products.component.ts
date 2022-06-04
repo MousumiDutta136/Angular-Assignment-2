@@ -19,6 +19,7 @@ export class ProductsComponent implements OnInit {
       filter(res => res !== undefined && res !== null)
     ).subscribe((response: any) =>{
       this.productsdata = response;
+      this.filteredProductList = this.productsdata
     });
 
   }
@@ -30,7 +31,7 @@ export class ProductsComponent implements OnInit {
  filterdProducts(text: string) {
 
 
-    if (text !== " ") {
+    if (text !== "") {
       this.filteredProductList = this.productsdata.filter(filteredList =>{
         const lowerCaseText = text.toLowerCase();
         const lowerCaseProductName = filteredList.name.toLowerCase();
