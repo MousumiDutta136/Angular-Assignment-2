@@ -1,7 +1,7 @@
 
 <nav-bar title="Humber e-store" (textSearched)="filterdProducts($event)"></nav-bar>
 <div class="container">
-<item *ngFor="let itemData of productsdata" [itemData]="itemData"></item>
+<item *ngFor="let itemData of filteredProductList" [itemData]="itemData"></item>
 </div>
 
 
